@@ -2,51 +2,59 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>สมัครง่ายเเละเร็ว</title>
+    <title>ฟอร์มสมัครสมาชิกอย่างง่าย</title>
 </head>
-<h1>สมัครง่ายเเละเร็ว </h1>
+<body>
 
+    <h1>สมัครสมาชิก - ง่ายและเร็ว <button type="button">X</button></h1>
 
-
-<fieldset>
-            <legend>ข้อมูลผู้ใช้</legend>
-            <label for="name">ชื่อ:</label>
-            <input type="text" id="name" na me="name" required><br>
-
-            <label for="lastname">นามสกุล:</label>
-            <input type="text" id="lastname" name="lastname" required><br>
-
-            <label for="contact">เบอร์โทรศัพท์หรืออีเมล:</label>
-            <input type="text" id="contact" name="contact" required><br>
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
             
-            <label for="password">รหัสผ่านใหม่:</label>
-            <input type="password" id="password" name="password" required><br>
-        </fieldset>
+            <p>
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name" required size="20"> 
+                
+                <label for="lastname">นามสกุล:</label>
+                <input type="text" id="lastname" name="lastname" required size="20">
+            </p>
 
+            <p>
+                <label for="contact">เบอร์โทรศัพท์หรืออีเมล:</label>
+                <input type="text" id="contact" name="contact" required size="45">
+            </p>
+            
+            <p>
+                <label for="password">รหัสผ่านใหม่:</label>
+                <input type="password" id="password" name="password" required size="45">
+            </p>
+        </fieldset>
 
         <fieldset>
-            <legend>วันเกิด:</legend>
-            <label>"Day"</label>
-            <Select name="Day">...</Selectname></Select>
+            <legend>วันเกิด</legend>
+            <input type="date" name="month" id="year">
 
-            <label>"Month"</label>
-            <Select name="Month">...</Selectname></Select>
+        </fieldset>
 
-            <label>"Year"</label>
-            <Select name="Year">...</Selectname></Select>
-         
+        <fieldset>
             <legend>เพศ</legend>
+            
             <input type="radio" id="female" name="gender" value="หญิง">
-            <label>"หญิง"</label>
+            <label for="female">หญิง</label>
             
             <input type="radio" id="male" name="gender" value="ชาย">
-            <label>"ชาย"</label>
-
-            <button>สมัคร</button>
+            <label for="male">ชาย</label>
         </fieldset>
-       >
-<body>
+        
+        <p>
+            ข้อความอธิบายตัวอย่าง: เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุกกี้ของเรา คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา และสามารถเลือกไม่รับได้ในภายหลัง
+        </p>
+
+        <hr> <input type="submit" value="สมัคร">
+        
+    </form>
     
 </body>
 </html>
