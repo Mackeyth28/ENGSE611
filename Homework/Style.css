@@ -1,0 +1,71 @@
+/* ข้อ 3: Element Selector เปลี่ยนฟอนต์และสีพื้นหลังโดยรวม */
+body {
+    background-color: #f0f4f8; /* สีพื้นหลังโทนฟ้าเทา */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ข้อ 6: ใช้ text-align และ font-weight */
+h1 {
+    text-align: center; 
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* ข้อ 5: ID Selector (#main-header) กำหนดสไตล์ส่วนหัว */
+#main-header {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* ข้อ 4: Class Selector (.highlight) เน้นข้อความบางส่วน */
+.highlight {
+    color: #e67e22; /* สีส้ม */
+    font-weight: bold;
+    background-color: #fff3e0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* ตกแต่งรูปภาพ */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ตกแต่งตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* ตกแต่งลิงก์เมนู */
+nav a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
