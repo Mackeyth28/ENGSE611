@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab CSS2 - CSS Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* 1. Setup CSS Grid for 2 Columns */
+        .container {
+            display: grid;
+            grid-template-columns: 25% 75%; /* Left: 25%, Right: 75% */
+            min-height: 400px;
+            border: 1px solid #ddd;
+        }
+
+        /* 2. Different background colors */
+        .sidebar {
+            background-color: #4a90e2; /* Blue sidebar */
+            color: white;
+            padding: 20px;
+        }
+
+        .main-content {
+            background-color: #ffffff; /* White main content */
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* 3. Responsive Layout (Screen width < 600px) */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr; /* Change to single column (stacked) */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>โจทย์ที่ 2: 2-Column Layout ด้วย CSS Grid</h2>
+
+    <div class="container">
+        <aside class="sidebar">
+            <strong>เมนู</strong>
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h3>ยินดีต้อนรับ</h3>
+            <p>นี่คือเนื้อหาหลักของเว็บไซต์</p>
+            <p>ลองหดหน้าจอเข้า-ขยายหน้าจอเพื่อดู Responsive Layout</p>
+        </main>
+    </div>
+
+</body>
+</html>
