@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Check</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+  
+        let score = 85; 
+        let grade = "";
+        let result = "";
+
+  
+        if (score >= 80) {
+            grade = "A";
+        } else if (score >= 70) {
+            grade = "B";
+        } else if (score >= 60) {
+            grade = "C";
+        } else if (score >= 50) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        if (score >= 50) {
+            result = "ผลสอบ: ผ่าน";
+        } else {
+            result = "ผลสอบ: ไม่ผ่าน";
+        }
+
+      
+        let outputText = `คะแนน: ${score} <br> เกรด: ${grade} <br> ${result}`;
+        document.getElementById("output").innerHTML = outputText;
+        console.log(outputText.replace(/<br>/g, "\n"));
+    </script>
+</body>
+</html>

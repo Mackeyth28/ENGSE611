@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop Practice</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        let maxNumber = 20;
+        let outputHTML = "";
+
+      
+        for (let i = 0; i <= maxNumber; i++) {
+            let type = (i % 2 === 0) ? "(คู่)" : "(คี่)";
+            outputHTML += `${i} ${type}<br>`;
+        }
+
+        outputHTML += "<br>นับทีละ 2:<br>";
+   
+        for (let i = 0; i <= 10; i += 2) {
+            outputHTML += `${i}<br>`;
+        }
+
+        outputHTML += "<br>ถอยหลัง:<br>";
+   
+        for (let i = 10; i >= 0; i--) {
+            outputHTML += `${i}<br>`;
+        }
+
+        document.getElementById("output").innerHTML = outputHTML;
+        console.log(outputHTML.replace(/<br>/g, "\n"));
+    </script>
+</body>
+</html>
